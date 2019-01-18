@@ -50,7 +50,7 @@ $("#deposit").click(function() {
     });
    
     $("#tdeposit").click(function(){
-        var newBalance= parseInt(inputDeposit+depositAmount)
+        var newBalance= parseInt(inputDeposit + depositAmount);
        console.log(newBalance)
     })
 
