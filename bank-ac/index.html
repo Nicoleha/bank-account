@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>BANK ACCOUNT</title>
+</head>
+<body>
+  
+       <div id="head">
+       <h1>KEEN BANK</h1>
+       <h3>Your money our Priority!</h3>
+    </div>
+       <!-- form to inter user information -->
+       <div class="container">
+       <form id="contact">
+       <div id="new-contact">
+           <label for="firstname">First Name</label><br>
+           <input type="text" id="firstname"><br>
+
+           <label for="secondname">Second Name</label><br>
+           <input type="text" id="lastname"><br>
+       </div>
+       <div id="new-adress">
+            <label for="e-mail">E-mail</label><br>
+            <input type="text" id="e-mail"><br>
+
+            <label for="p-number">Phone Number</label><br>
+            <input type="number" id="p-number"><br>
+ 
+            <label for="Initial deposit"><strong>INITIAL DEPOSIT</strong></label><br>
+            <input type="text" id="initial-deposit">
+
+      </div><br>
+      <button type="submit" id="submit"><strong>Create Account</strong></button>
+    </form>
+
+    <!-- this will display the user information intered in the form -->
+
+    <div id="user-info">
+        <h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<button type="button" id="deposit"><strong>DEPOSIT</strong></button>
+<button type="button" id="withdraw"><strong>WITHDRAW</strong></button>
+    </div>
+
+    <!-- this is where the user will choose to withdraw or deposit -->
+
+</div> 
+        <div id="bank-deposit">
+             
+        <div id="">
+            <h3>Enter amount to deposit:</h3><br>
+            <label>date</label><br>
+            <input type="date"><br>
+            <label>Amount</label><br>
+            <input type="number" id="deposit-amount"><br>
+            
+            <button type="button" id="tdeposit"><strong>deposit</strong></button>
+        </div>
+       
+    </div>
+
+
+    <div id="bank-withdraw">
+      
+            <div id="">
+               <h3>Enter amount to withdraw:</h3><br>
+                <label>date</label><br>
+                <input type="date"><br>
+                <label>Amount</label><br>
+                <input type="number" id="withdraw-amount"><br>
+               
+                <button type="button" id="twithdraw"><strong>withdraw</strong></button>
+            </div>
+              
+    </div>
+    
+<!-- this is the page where the user get a confirmation from the bank -->
+ <div id="ac-balance">
+<p id="demo">bgxvgzsdsd</p>
+ </div>
+ 
+</body>
+</html>
