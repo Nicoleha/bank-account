@@ -32,9 +32,9 @@ background-color:rgb(207, 207, 228); }
     padding:4%;
     color:rgb(165, 206, 165);
 }
-a {text-align: center;
-    background-color: grey;
+a {width: 100%;
+background-color: grey;
 border: 2px solid rgb(111, 115, 155);
 color:black;
-padding:20px;
-margin: 100px;}
+padding: 30px;
+}
