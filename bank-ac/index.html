@@ -14,13 +14,16 @@
     <title>BANK ACCOUNT</title>
 </head>
 <body>
-  
+ 
        <div id="head">
        <h1>KEEN BANK</h1>
        <h3>Your money our Priority!</h3>
+       
     </div>
+
        <!-- form to inter user information -->
        <div class="container">
+            <a href="index.html">BACK</a>
        <form id="contact">
        <div id="new-contact">
            <label for="firstname">First Name</label><br>
@@ -37,19 +40,23 @@
             <input type="number" id="p-number"><br>
  
             <label for="Initial deposit"><strong>INITIAL DEPOSIT</strong></label><br>
-            <input type="text" id="initial-deposit">
+            <input type="number" id="initial-deposit" required>
 
       </div><br>
-      <button type="submit" id="submit"><strong>Create Account</strong></button>
+      <button type="submit" id="submit"><strong>LOGIN</strong></button>
     </form>
 
     <!-- this will display the user information intered in the form -->
 
     <div id="user-info">
-        <h1></h1>
-<h2></h2>
-<h3></h3>
-<h4></h4>
+        <p><strong>Name</strong></p>
+        <h1></h1><br>
+        <p><strong>E-mail</strong></p>
+<h2></h2><br>
+<p><strong>Phone Number</strong></p>
+<h3></h3><br>
+<p><strong>Initial Balance</strong></p>
+<h4></h4><br>
 <button type="button" id="deposit"><strong>DEPOSIT</strong></button>
 <button type="button" id="withdraw"><strong>WITHDRAW</strong></button>
     </div>
@@ -64,7 +71,7 @@
             <label>date</label><br>
             <input type="date"><br>
             <label>Amount</label><br>
-            <input type="number" id="deposit-amount"><br>
+            <input type="number" id="deposit-amount" required><br>
             
             <button type="button" id="tdeposit"><strong>deposit</strong></button>
         </div>
@@ -79,7 +86,7 @@
                 <label>date</label><br>
                 <input type="date"><br>
                 <label>Amount</label><br>
-                <input type="number" id="withdraw-amount"><br>
+                <input type="number" id="withdraw-amount" required><br>
                
                 <button type="button" id="twithdraw"><strong>withdraw</strong></button>
             </div>
@@ -88,7 +95,10 @@
     
 <!-- this is the page where the user get a confirmation from the bank -->
  <div id="ac-balance">
-<p id="demo">bgxvgzsdsd</p>
+     <h1>Dear Customer,</h1>
+     <h2>Transaction Succcessful !</h2>
+     <h3>Your Account Balance is now:</h3>
+<h1 id="demo"></h1>
  </div>
  
 </body>

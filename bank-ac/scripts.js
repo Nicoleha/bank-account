@@ -1,3 +1,4 @@
+var newBalance;
 function Name(first,last){
     this.first=first;
     this.last=last;
@@ -22,11 +23,9 @@ $(document).ready(function(){
 
         var inputEmail=$("input#e-mail").val();
         var inputNumber=$("input#p-number").val();
-        var inputDeposit=$("input#initial-deposit").val();
+        var inputDeposit=parseInt($("input#initial-deposit").val());
         var newAdress=new Adresses(inputEmail,inputNumber,inputDeposit);
-
-        var withdrawAmount=$("input#withdraw-amount").val();
-        var depositAmount=$("input#deposit-amount").val();
+    
         
 
     //gether user info and hide form    
@@ -38,21 +37,37 @@ $("#user-info h3").text(newAdress.inputNumber);
 $("#user-info h4").text(newAdress.inputDeposit);
 //open deposit form
 $("#deposit").click(function() {
-    $("button#deposit").hide();
-    $("#bank-deposit").show();
+    // $("button#deposit").hide();
+    $("#bank-deposit").toggle();
     $("#withdraw").hide();
     });
     //open withdraw form
   $("#withdraw").click(function() {
- 
-    $("#bank-withdraw").show();
+ $("#bank-withdraw").toggle();
     $("#deposit").hide();
     });
    
     $("#tdeposit").click(function(){
-        var newBalance= parseInt(inputDeposit + depositAmount);
+        var depositAmount=parseInt($("input#deposit-amount").val());
+        var newBalance= inputDeposit + depositAmount;
        console.log(newBalance)
+       
+       $("#ac-balance").show();
+       $("#bank-deposit").hide();
+      $("#user-info").hide();
+       $("#demo").text(newBalance)
     })
+    $("#twithdraw").click(function(){
+        var withdrawAmount=parseInt($("input#withdraw-amount").val());
+        var newBalance= inputDeposit - withdrawAmount;
+       console.log(newBalance)
+       
+       $("#ac-balance").show();
+       $("#bank-withdraw").hide();
+       $("#user-info").hide();
+       $("#demo").text(newBalance)
+    })
+
 
     }); 
 
